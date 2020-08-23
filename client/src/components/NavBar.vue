@@ -17,16 +17,16 @@
                     <router-link class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white" to="/about">About</router-link>
                 </li>
                 <li class="mr-3">
-                    <router-link v-if="!isLoggedIn" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white" to="/user/login">Login</router-link>
+                    <router-link v-if="!isLoggedIn" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white" to="/login">Login</router-link>
                 </li>
                 <li class="mr-3">
-                    <router-link v-if="!isLoggedIn" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white" to="/user/register">Register</router-link>
+                    <router-link v-if="!isLoggedIn" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white" to="/register">Register</router-link>
                 </li>
                 <li>
-                    <router-link v-if="isLoggedIn" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white" to="/user/profile">Profile</router-link>
+                    <router-link v-if="isLoggedIn" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white" to="/profile">Profile</router-link>
                 </li>
                 <li>
-                    <router-link v-if="isLoggedIn" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white" to="/user/login">Log Out</router-link>
+                    <router-link v-if="isLoggedIn" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white" to="/login">Log Out</router-link>
                 </li>
             </ul>
         </div>

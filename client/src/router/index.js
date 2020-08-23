@@ -17,26 +17,26 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-    path: '/user/login',
+    path: '/login',
     name: 'login',
     component: () => import(/* webpackChunkName: "login" */ '../views/app/pages/login.vue')
   },
   {
-    path: '/user/register',
+    path: '/register',
     name: 'register',
     component: () => import(/* webpackChunkName: "register" */ '../views/app/pages/register.vue')
   },
   {
-    path: '/user/profile',
+    path: '/profile',
     name: 'profile',
     component: () => import(/* webpackChunkName: "profile" */ '../views/app/pages/profile.vue')
   },
   /*{
-    path: '/user/',
+    path: '/logged-in/',
     component: () => import('../views/app/index.vue'),
     redirect: "/home",
     children: [
-      // UserProfile will be rendered inside User's <router-view>
+      // UserProfile will be rendered inside current's <router-view>
       // when /user/:id/profile is matched
       {
         path: 'login',
