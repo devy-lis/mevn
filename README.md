@@ -9,7 +9,7 @@ npm install -g nodemon
 npm i -g @vue/cli --verbose
 
 ###### For Windows Git Bash ###### 
-winpty vue.cmd create (name)
+winpty vue.cmd create client
     Vue CLI v4.5.4
     ? Please pick a preset: Manually select features
     ? Check the features needed for your project: Choose Vue version, Babel, Router, Vuex, Linter
@@ -19,12 +19,16 @@ winpty vue.cmd create (name)
     ? Pick additional lint features: Lint on save
     ? Where do you prefer placing config for Babel, E
     
-##### Running Server ####
+##### Running Server #####
     nodemon
 
 #### Running Client ####
     vue create client
         ->cd client
-        -> npm run serve
+        ->npm run serve
 
+#### Installing Tailwind ####
+npm install tailwindcss
 
+npx tailwindcss init
+    generate a config file for your project using the Tailwind CLI
