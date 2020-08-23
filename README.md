@@ -32,3 +32,5 @@ npm install tailwindcss
 
 npx tailwindcss init
     generate a config file for your project using the Tailwind CLI
+
+npm install axios
