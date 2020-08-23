@@ -4,7 +4,11 @@
   "description": "Web application to handle authentication in vue.js\u0001",
   "main": "app.js",
   "scripts": {
-    "dev": "npm run dev"
+    "client-install": "npm install --prefix client",
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "npm run serve --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "devy-lis",
   "license": "MIT",
